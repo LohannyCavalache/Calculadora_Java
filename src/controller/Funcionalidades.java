@@ -137,7 +137,9 @@ public class Funcionalidades {
                 }else if(entidade.getOperacao().equals("-")){
                     entidade.setResultadoCalculo(Double.parseDouble(entidade.getNumero1()) - Math.sqrt(Double.parseDouble(entidade.getNumero2())));
                 }else if(entidade.getOperacao().equals("*")){
-                    entidade.setResultadoCalculo(Double.parseDouble())
+                    entidade.setResultadoCalculo(Double.parseDouble(entidade.getNumero1()) * Math.sqrt(Double.parseDouble(entidade.getNumero2())));
+                }else if(entidade.getOperacao().equals("/")){
+                    entidade.setResultadoCalculo(Double.parseDouble(entidade.getNumero1()) / Math.sqrt(Double.parseDouble(entidade.getNumero2())));
                 }
             }
         }
